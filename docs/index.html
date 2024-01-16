@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>아멜리 웹사이트</title>
+
+  <!-- 반응형 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- 제이쿼리 연결 -->
+  <script defer src="script/jquery.min.js"></script>
+
+  <!-- 공통 css 연결 -->
+  <link rel="stylesheet" href="style/style.css">
+
+  <!-- 공통 js 연결 -->
+  <script defer src="script/script.js"></script>
+
+  <!-- 테일윈드 불러오기 -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- 폰트어썸 불러오기 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+  <!-- swiper 불러오기 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.min.css">
+
+</head>
+
+<body>
+  <header id="header">
+    <div class="con">
+      <div class="logo">
+        <a href="#0">
+          <img src="https://ifh.cc/g/hSRmkN.png" alt="브랜드 로고">
+      </div>
+    </div>
+  </header>
+
+  <nav id="sliding-menu">
+    <div class="menu-btn">
+      <div class="line line--1"></div>
+      <div class="line line--2"></div>
+      <div class="line line--3"></div>
+    </div>
+
+    <div class="logo">
+      <a href="#0">
+        <img src="https://ifh.cc/g/hSRmkN.png" alt="브랜드 로고">
+      </a>
+    </div>
+
+    <nav class="menu-box">
+      <ul class="list-1 line">
+        <li>
+          <a href="#0">LOGIN</a>
+        </li>
+        <li class="right">
+          <a href="#0">JOIN US</a>
+        </li>
+        <li>
+          <a href="#0">MY PAGE</a>
+        </li>
+        <li class="right">
+          <a href="#0">CART(0)</a>
+        </li>
+      </ul>
+      <ul class="list-2">
+        <li class="line color">
+          <a href="#0">지금 베스트 25</a>
+        </li>
+        <li>
+          <a href="#0">따라 해 볼까요?</a>
+        </li>
+        <li>
+          <a href="#0">백설 쿠션</a>
+        </li>
+        <li>
+          <a href="#0">보라 쿠션</a>
+        </li>
+        <li class="line">
+          <a href="#0">아멜리 처음세트</a>
+        </li>
+        <li class="line">
+          <a href="#0" class="color">아멜리 AI-HEVA</a>
+          <ul>
+            <li><a href="#0">아멜리 Ai-HEVA</a></li>
+            <li><a href="#0">버추얼 메이크업</a></li>
+            <li><a href="#0">퍼스널 컬러테스트</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#0">FACE</a>
+          <ul>
+            <li><a href="#0">파우더</a></li>
+            <li><a href="#0">파운데이션</a></li>
+            <li><a href="#0">쿠션</a></li>
+            <li><a href="#0">컨실러</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#0">EYE</a>
+          <ul>
+            <li><a href="#0">스텝베이직</a></li>
+            <li><a href="#0">스윗다이아</a></li>
+            <li><a href="#0">스파클스팟</a></li>
+            <li><a href="#0">아스트랄라이트</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#0">LIP</a>
+          <ul>
+            <li><a href="#0">립 틴트</a></li>
+            <li><a href="#0">플랫립스</a></li>
+            <li><a href="#0">에어립스</a></li>
+          </ul>
+        </li>
+        <li class="line">
+          <a href="#0">MAKE-UP TOOL</a>
+        </li>
+        <li class="line">
+          <a href="#0">아멜리의 서랍</a>
+        </li>
+        <li>
+          <a href="#0">아멜리가 뉴멜리에게</a>
+          <ul>
+            <li><a href="#0">ARTICLE</a></li>
+            <li><a href="#0">HOW TO USE</a></li>
+            <li><a href="#0">LOOKBOOK</a></li>
+          </ul>
+        </li>
+        <li class="line">
+          <a href="#0">뉴멜리가 뉴멜리에게</a>
+        </li>
+        <li>
+          <a href="#0">NOTICE</a>
+          <ul>
+            <li><a href="#0">공지사항</a></li>
+            <li><a href="#0">제품정보</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#0">FAQ</a>
+        </li>
+        <li>
+          <a href="#0">ABOUT US</a>
+        </li>
+        <li>
+          <a href="#0">OFFLINE STORE</a>
+        </li>
+        <li class="line">
+          <a href="#0">1:1 문의</a>
+        </li>
+        <li>
+          <a href="#0">CS CENTER</a>
+        </li>
+      </ul>
+    </nav>
+  </nav>
+
+  <div id="main">
+    <div id="slider">
+      <div class="swiper-container swiper-1">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <video id="video" autoplay="" loop="" muted="" playsinline="">
+              <source
+                src="https://player.vimeo.com/progressive_redirect/playback/900729613/rendition/1080p/file.mp4?loc=external&signature=684259c3c3226428ffba0a2a8a4cf7d647cf574ce56b8a1e4201f6316cf7d613"
+                type="video/mp4">
+            </video>
+          </div>
+          <div class="swiper-slide">
+            <video id="video" autoplay="" loop="" muted="" playsinline="">
+              <source
+                src="https://player.vimeo.com/progressive_redirect/playback/885550418/rendition/1080p/file.mp4?loc=external&signature=e4cff2699f14cfd5528f513209883358265f200b999862f851f96846ca279e9e"
+                type="video/mp4">
+            </video>
+          </div>
+          <div class="swiper-slide">
+            <a href="#0">
+              <img src="https://ameli.co.kr/web/upload/main/main_img602.jpg" alt="스와이퍼 이미지">
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <video id="video" autoplay="" loop="" muted="" playsinline="">
+              <source
+                src="https://player.vimeo.com/progressive_redirect/playback/885147404/rendition/1080p/file.mp4?loc=external&signature=ce5fd83e8e38fa1fb8d3bdff0f7110156d088b6066e64ae9336995c362b97f5d"
+                type="video/mp4">
+            </video>
+          </div>
+          <div class="swiper-slide">
+            <a href="#0">
+              <img src="https://ameli.co.kr/web/upload/main/main_img605.jpg" alt=스와이퍼 이미지">
+            </a>
+          </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+
+      </div>
+    </div>
+    <section id="section-1">
+      <div class="tit">지금 베스트 25</div>
+      <div class="btn">
+        <button type="button">ALL</button>
+      </div>
+      <div class="product">
+        <div class="swiper-container swiper-2">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="#0">
+                <img src="https://ameli.co.kr/web/product/big/202103/f5a0c78d52d6d67c7c1c4349078a75c2.jpg" alt="스텝베이직 244 빈티지발렌타인">
+                <div class="info">
+                  <span class="name">스텝베이직 244 빈티지발렌타인</span>
+                  <span class="price">15,000원</span>
+                  <span>13,500원</span>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#0">
+                <img src="https://www.ameli.co.kr/web/product/extra/big/202210/508c9bb0be27048a82c5ad8802c8d5b1.png"
+                  alt="나르시시즘 립 틴트 714 뱀프틴트">
+                <div class="info">
+                  <span class="name">[15% 할인 + 무료배송] 나르시시즘 립 틴트 714 뱀프틴트</span>
+                  <span class="price">20,000원</span>
+                  <span>17,000원</span>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#0">
+                <img src="https://ameli.co.kr/web/product/big/202105/aebbf8c20b85e4e91b1ba0cda3d5b1fd.jpg" alt="스텝베이직 243 마카롱그레이">
+                <div class="info">
+                  <span class="name">스텝베이직 243 마카롱그레이</span>
+                  <span class="price">15,000원</span>
+                  <span>13,500원</span>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#0">
+                <img src="https://ameli.co.kr/web/product/extra/big/202301/a58d643e1dd7568beec402d59445698a.jpg" alt="컴플리먼트 시리즈 쿠션 SPF50+, PA+++ 보라">
+                <div class="info">
+                  <span class="name">컴플리먼트 시리즈 쿠션 SPF50+, PA+++ 보라</span>
+                  <span class="price">28,000원</span>
+                  <span>25,200원</span>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#0">
+                <img src="https://ameli.co.kr/web/product/big/202303/342f053f5d9b27ef975e00ab77d6aa58.jpg" alt="나르시시즘 립 틴트">
+                <div class="info">
+                  <span class="name">[15% 할인 + 무료배송] 나르시시즘 립 틴트</span>
+                  <span class="price">20,000원</span>
+                  <span>17,000원</span>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#0">
+                <img src="https://ameli.co.kr/web/product/extra/big/202011/e6b8891358fa0c376e96c7aa45857929.jpg" alt="톤업 베이스 데일리 쿠션 SPF50+, PA+++ 008 도화">
+                <div class="info">
+                  <span class="name">톤업 베이스 데일리 쿠션 SPF50+, PA+++ 008 도화</span>
+                  <span class="price">26,000원</span>
+                  <span>23,400원</span>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#0">
+                <img src="https://ameli.co.kr/web/product/extra/big/202011/0fcc3bde2dc9bb1b5d51f2672ab4c46d.jpg" alt="플랫립스 914 뱀파이어">
+                <div class="info">
+                  <span class="name">플랫립스 914 뱀파이어</span>
+                  <span class="price">16,000원</span>
+                  <span>14,400원</span>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#0">
+                <img src="https://ameli.co.kr/web/product/big/202103/acc0cd7ce06c7b4dde6f61bf4989c792.jpg" alt="스윗다이아 190 엔젤블러드">
+                <div class="info">
+                  <span class="name">스윗다이아 190 엔젤블러드</span>
+                  <span class="price">17,000원</span>
+                  <span>15,300원</span>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#0">
+                <img src="https://ameli.co.kr/web/product/big/202206/79f5bcb29f320ab6fd2d3c99eedfb72c.png" alt="스텝베이직 219 발레리나">
+                <div class="info">
+                  <span class="name">스텝베이직 219 발레리나</span>
+                  <span class="price">15,000원</span>
+                  <span>13,500원</span>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#0">
+                <img src="https://ameli.co.kr/web/product/big/202310/135ed212e62b3a24ed487d8f8458c9c1.jpg" alt="베이크드파우더 003 밀키바이올렛">
+                <div class="info">
+                  <span class="name">베이크드파우더 003 밀키바이올렛</span>
+                  <span class="price">34,000원</span>
+                  <span>30,600원</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-btn">
+          <div class="swiper-button-prev">
+            <svg id="레이어_1" data-name="레이어 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.31 23.07">
+              <defs>
+                <style>
+                  .cls-1 {
+                    fill: none;
+                    stroke: #3d3245;
+                    stroke-linecap: round;
+                    stroke-miterlimit: 10;
+                  }
+
+                  .cls-2 {
+                    fill: #3d3245;
+                  }
+                </style>
+              </defs>
+              <g id="arrow">
+                <line class="cls-1" x1="10.53" y1="11.54" x2="34.81" y2="11.54" />
+                <polygon class="cls-2"
+                  points="13.85 15.63 14.53 14.89 10.91 11.54 14.53 8.18 13.85 7.45 9.45 11.54 13.85 15.63" />
+              </g>
+              <circle id="circle" class="cls-1" cx="11.54" cy="11.54" r="11.04" />
+            </svg>
+          </div>
+          <div class="swiper-button-next">
+            <svg id="레이어_1" data-name="레이어 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.31 23.07">
+              <defs>
+                <style>
+                  .cls-1 {
+                    fill: none;
+                    stroke: #3d3245;
+                    stroke-linecap: round;
+                    stroke-miterlimit: 10;
+                  }
+
+                  .cls-2 {
+                    fill: #3d3245;
+                  }
+                </style>
+              </defs>
+              <g id="arrow">
+                <line class="cls-1" x1="24.78" y1="11.54" x2="0.5" y2="11.54" />
+                <polygon class="cls-2"
+                  points="21.46 7.45 20.78 8.18 24.39 11.54 20.78 14.89 21.46 15.63 25.86 11.54 21.46 7.45" />
+              </g>
+              <circle id="circle" class="cls-1" cx="23.77" cy="11.54" r="11.04" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="section-2">
+      <div class="tit">따라 해 볼까요?</div>
+      <div class="cont">
+        <div class="cont-1">
+          <a href="#0">
+            <img src="https://ameli.co.kr/web/product/big/202312/690cde83301d7bd9fc697014a11e1f56.jpg" alt="눈앵두 메이크업">
+            <p>눈앵두 메이크업</p>
+          </a>
+        </div>
+        <div class="cont-2">
+          <a href="#0">
+            <img src="https://ameli.co.kr/web/product/big/202312/c67c229e753cb32df73fe9ff11def6fc.jpg" alt="윈터 스노우 메이크업">
+            <p>윈터 스노우 메이크업</p>
+          </a>
+        </div>
+        <div class="cont-3">
+          <a href="#0">
+            <img src="https://ameli.co.kr/web/product/big/202312/027594cef8d87b810501f14b03817ef9.jpg" alt="뱅쇼콜라 메이크업">
+            <p>뱅쇼콜라 메이크업</p>
+          </a>
+        </div>
+        <div class="cont-4">
+          <a href="#0">
+            <img src="https://ameli.co.kr/web/product/big/202312/393d0725f23a90ff6f102e2958a41d01.jpg" alt="타임리스 브라운 메이크업">
+            <p>타임리스 브라운 메이크업</p>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section id="section-3">
+      <div class="tit">아멜리 처음세트</div>
+      <div class="cont">
+        <div class="cont-img">
+          <img src="https://ameli.co.kr/web/product/big/202308/3945f208d909f62a1669a700d795d189.jpg" alt="아멜리가 추천하는 3STEP 조합"
+            class="img-1 active">
+          <img src="https://ameli.co.kr/web/product/big/202307/919be569f0e54c6b12a920cafd31046e.jpg" alt="보라 쿠션 짝꿍템"
+            class="img-2">
+          <img src="https://ameli.co.kr/web/product/big/202307/0fc5c9c7cd0438cc7576db24a1838bef.jpg" alt="도화 쿠션 짝꿍템"
+            class="img-3">
+          <img src="https://ameli.co.kr/web/product/big/202307/1a6accc08dbb75d209da51a1c49b93e8.webp" alt="확신의 아이메이크업 조합"
+            class="img-4">
+        </div>
+        <div class="cont-tit">
+          <a href="#0" class="tit-1">아멜리가 추천하는 3STEP 조합</a>
+          <a href="#0" class="tit-2">보라 쿠션 짝꿍템</a>
+          <a href="#0" class="tit-3">도화 쿠션 짝꿍템</a>
+          <a href="#0" class="tit-4">확신의 아이메이크업 조합</a>
+        </div>
+      </div>
+    </section>
+    <section id="section-3-1">
+      <div class="tit">아멜리 처음세트</div>
+      <div class="cont">
+        <div class="cont-1">
+          <a href="#0">
+            <img src="https://ameli.co.kr/web/product/big/202308/3945f208d909f62a1669a700d795d189.jpg" alt="아멜리가 추천하는 3STEP 조합">
+            <p>아멜리가 추천하는 3STEP 조합</p>
+          </a>
+        </div>
+        <div class="cont-2">
+          <a href="#0">
+            <img src="https://ameli.co.kr/web/product/big/202307/919be569f0e54c6b12a920cafd31046e.jpg" alt="보라 쿠션 짝꿍템">
+            <p>보라 쿠션 짝꿍템</p>
+          </a>
+        </div>
+        <div class="cont-3">
+          <a href="#0">
+            <img src="https://ameli.co.kr/web/product/big/202307/0fc5c9c7cd0438cc7576db24a1838bef.jpg" alt="도화 쿠션 짝꿍템">
+            <p>도화 쿠션 짝꿍템</p>
+          </a>
+        </div>
+        <div class="cont-4">
+          <a href="#0">
+            <img src="https://ameli.co.kr/web/product/big/202307/1a6accc08dbb75d209da51a1c49b93e8.webp" alt="확신의 아이메이크업 조합">
+            <p>확신의 아이메이크업 조합</p>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section id="section-4">
+      <div class="tit">AMELI AI-HEVA</div>
+      <div class="cont">
+        <div class="img">
+          <img src="https://ifh.cc/g/0Mo8mW.jpg" alt=">AMELI AI-HEVA">
+        </div>
+        <div class="info">
+          <p class="main">메이크업 경험은 <br> 언제 어디서나 누구에게나</p>
+          <p>꼭 서울에 살지 않아도</p>
+          <p>귀찮게 매장에 들르지 않아도</p>
+          <p>위생 상태가 살짝 걱정되는 테스트 제품을 쓰지 않아도</p>
+          <p class="sub">내가 딱 필요한 색을 실패 없이 확인할 수 있도록 <br> 아멜리 AI-HEVA가 도와줄 거에요.</p>
+          <button type="button">SHOW MORE</button>
+        </div>
+      </div>
+    </section>
+    <section id="section-5">
+      <p>화장이 처음인 누군가에게도 메이크업 아티스트에게도</p>
+      <p class="point">아멜리는 쉽습니다</p>
+    </section>
+  </div>
+
+  <div id="footer">
+    <div class="footer-1">
+      <span>
+        <p>주식회사</p>
+        <p>아멜리글로벌</p>
+      </span>
+      <span>
+        <p>대표자</p>
+        <p>권유미</p>
+      </span>
+      <span>
+        <p>개인정보관리</p>
+        <p>이한나</p>
+      </span>
+      <span>
+        <p>inquiry</p>
+        <p>biz@ameli.co.kr</p>
+      </span>
+      <span>
+        <p>고객센터</p>
+        <p>1533-8835(02-566-7889)</p>
+      </span>
+      <span>
+        <p>사업자번호</p>
+        <p>487-88-01427[사업자정보확인]</p>
+      </span>
+      <span>
+        <p>통신판매업번호</p>
+        <p>제 2019 - 서울강남 - 04775호</p>
+      </span>
+      <span>
+        <p>주소</p>
+        <p>06180 서울특별시 강남구 테헤란로20길 18(역삼동) 부봉빌딩 6층</p>
+      </span>
+    </div>
+    <div class="footer-2">
+      <span>Copyright Ameli All right reserved / Agreement / 개인정보취급방침 / Guide</span>
+    </div>
+    <div class="footer-3">
+      <span>고객님은 안전거래를 위해 현금 등으로 결제시 저희 쇼핑몰에서 가입한 PG사의 구매안전서비스를 이용하실 수 있습니다. KG 이니시스 에스크로 (서비스가입사실확인)</span>
+    </div>
+  </div>
+</body>
+
+</html>
